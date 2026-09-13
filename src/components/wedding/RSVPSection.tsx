@@ -9,7 +9,7 @@ type AttendingStatus = "yes" | "no" | null;
 interface FormData {
   name: string;
   attending: AttendingStatus;
-  guests: number;
+  guests: number | "";
 }
 
 const STORAGE_KEY = "wedding-rsvp-submitted";
@@ -52,7 +52,7 @@ export default function RSVPSection() {
         body: JSON.stringify({
           name: form.name.trim(),
           attending: form.attending === "yes" ? "Có" : "Không",
-          guests: form.attending === "yes" ? form.guests : 0,
+          guests: form.attending === "yes" ? (form.guests || 1) : 0,
         }),
       });
 
@@ -201,15 +201,13 @@ export default function RSVPSection() {
                       min={1}
                       max={10}
                       value={form.guests}
-                      onChange={(e) =>
+                      onChange={(e) => {
+                        const val = e.target.value;
                         setForm((f) => ({
                           ...f,
-                          guests: Math.min(
-                            10,
-                            Math.max(1, parseInt(e.target.value) || 1),
-                          ),
-                        }))
-                      }
+                          guests: val === "" ? "" : Number(val),
+                        }));
+                      }}
                       className="w-full px-4 py-3 border border-[#C9B88C]/30 bg-white/80 text-[#2C2C2C] font-sans text-sm focus:outline-none focus:border-[#1B3A5C] focus:ring-1 focus:ring-[#1B3A5C]/20 transition-colors"
                     />
                   </div>
