@@ -27,7 +27,7 @@ export default function InvitationMessage() {
         </h2>
 
         <p className="font-serif text-lg sm:text-xl text-[#2C2C2C]/80 leading-relaxed mb-8">
-          Đến dự buổi tiệc chung vui
+          Đến chung vui trong ngày hạnh phúc
           <br />
           cùng gia đình chúng tôi
         </p>
@@ -44,9 +44,9 @@ export default function InvitationMessage() {
 
         {/* Closing message */}
         <p className="font-serif text-base sm:text-lg text-[#2C2C2C]/60 leading-relaxed italic">
-          Sự hiện diện của Quý Khách
+          Sự hiện diện của bạn
           <br />
-          là niềm vinh hạnh cho gia đình chúng tôi.
+          là niềm vinh hạnh lớn nhất đối với gia đình chúng tôi.
         </p>
 
         {/* Decorative bottom */}

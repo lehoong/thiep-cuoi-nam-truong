@@ -124,8 +124,8 @@ export default function RSVPSection() {
                 </p>
                 <p className="font-sans text-sm text-[#2C2C2C]/50 mt-2">
                   {submittedAttending
-                    ? "Chúng tôi rất mong được gặp bạn."
-                    : "Chúng tôi rất tiếc!"}
+                    ? "Chúng mình rất mong được gặp bạn."
+                    : "Chúng mình rất tiếc!"}
                 </p>
                 <div className="mt-6 pt-4 border-t border-[#C9B88C]/15">
                   <button
