@@ -48,7 +48,7 @@ export const weddingConfig = {
     bankName: "Techcombank",
     accountName: "TRẦN NAM TRƯỜNG",
     accountNumber: "1111200004",
-    qrImage: "/photos/qr-placeholder.png",
+    qrImage: "/photos/qr-techcombank.jpg",
   },
 
   music: {
