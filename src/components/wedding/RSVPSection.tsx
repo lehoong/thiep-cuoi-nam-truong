@@ -71,6 +71,18 @@ export default function RSVPSection() {
     }
   };
 
+  const handleReset = () => {
+    localStorage.removeItem(STORAGE_KEY);
+    localStorage.removeItem("wedding-rsvp-attending");
+    setForm({
+      name: "",
+      attending: null,
+      guests: 1,
+    });
+    setError(false);
+    setSubmitted(false);
+  };
+
   return (
     <section className="py-20 px-6 bg-[#FFFEF9]" aria-label="Xác nhận tham dự">
       <div
@@ -98,7 +110,8 @@ export default function RSVPSection() {
               key="success"
               initial={{ opacity: 0, y: 10 }}
               animate={{ opacity: 1, y: 0 }}
-              transition={{ duration: 0.5 }}
+              exit={{ opacity: 0, y: -10 }}
+              transition={{ duration: 0.4 }}
             >
               <div className="text-center py-12 px-6 border border-[#C9B88C]/20 bg-white/50">
                 <div className="text-3xl mb-4">
@@ -114,6 +127,15 @@ export default function RSVPSection() {
                     ? "Chúng tôi rất mong được gặp bạn."
                     : "Chúng tôi rất tiếc!"}
                 </p>
+                <div className="mt-6 pt-4 border-t border-[#C9B88C]/15">
+                  <button
+                    type="button"
+                    onClick={handleReset}
+                    className="font-sans text-xs tracking-wider text-[#1B3A5C]/70 hover:text-[#1B3A5C] underline underline-offset-4 decoration-[#C9B88C]/60 hover:decoration-[#1B3A5C] transition-all cursor-pointer inline-flex items-center gap-1.5 focus:outline-none"
+                  >
+                    <span>Gửi thêm phản hồi khác</span>
+                  </button>
+                </div>
               </div>
             </motion.div>
           ) : (

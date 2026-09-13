@@ -47,11 +47,11 @@ export default function Index() {
 
             {/* Subtle name overlay */}
             <div className="absolute bottom-12 left-0 right-0 text-center px-6">
-              <p className="font-serif text-3xl sm:text-4xl text-[#2C2C2C] drop-shadow-md">
-                {weddingConfig.couple.groom.name}
-                <span className="text-[#C9B88C] mx-3">&</span>
-                {weddingConfig.couple.bride.name}
-              </p>
+              <h1 className="font-serif text-3xl sm:text-4xl text-[#2C2C2C] drop-shadow-md flex flex-col sm:flex-row items-center justify-center gap-1 sm:gap-3">
+                <span className="whitespace-nowrap">{weddingConfig.couple.groom.name}</span>
+                <span className="text-[#C9B88C] text-2xl sm:text-3xl font-normal leading-none">&</span>
+                <span className="whitespace-nowrap">{weddingConfig.couple.bride.name}</span>
+              </h1>
             </div>
           </section>
 
