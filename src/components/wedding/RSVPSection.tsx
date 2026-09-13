@@ -52,18 +52,27 @@ export default function RSVPSection() {
         body: JSON.stringify({
           name: form.name.trim(),
           attending: form.attending === "yes" ? "Có" : "Không",
-          guests: form.attending === "yes" ? (form.guests || 1) : 0,
+          guests: form.attending === "yes" ? form.guests : 0,
         }),
       });
+
+      if (form.attending === "yes") {
+        import("canvas-confetti").then((module) => {
+          const confetti = module.default;
+          confetti({
+            particleCount: 150,
+            spread: 90,
+            origin: { y: 0.6 },
+            colors: ['#C9B88C', '#E6D5B8', '#FFFEF9'],
+            disableForReducedMotion: true,
+          });
+        });
+      }
 
       setSubmittedAttending(form.attending === "yes");
       setSubmitted(true);
       localStorage.setItem(STORAGE_KEY, "true");
       localStorage.setItem("wedding-rsvp-attending", form.attending === "yes" ? "yes" : "no");
-
-      if (form.attending === "yes") {
-        triggerConfetti();
-      }
     } catch {
       setError(true);
     } finally {
