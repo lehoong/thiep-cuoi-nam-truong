@@ -57,16 +57,7 @@ export default function RSVPSection() {
       });
 
       if (form.attending === "yes") {
-        import("canvas-confetti").then((module) => {
-          const confetti = module.default;
-          confetti({
-            particleCount: 150,
-            spread: 90,
-            origin: { y: 0.6 },
-            colors: ['#C9B88C', '#E6D5B8', '#FFFEF9'],
-            disableForReducedMotion: true,
-          });
-        });
+        triggerConfetti();
       }
 
       setSubmittedAttending(form.attending === "yes");
