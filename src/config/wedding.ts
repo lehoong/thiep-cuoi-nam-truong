@@ -30,7 +30,7 @@ export const weddingConfig = {
       time: "09:00",
       venue: "TƯ GIA",
       address: "Xuân Long - Kim Anh - Hà Nội",
-      mapUrl: "https://maps.google.com/?q=Xuân+Long,+Kim+Anh,+Hà+Nội",
+      mapUrl: "https://maps.google.com/?q=21.250951,105.763616",
     },
     reception: {
       title: "TIỆC CƯỚI",
