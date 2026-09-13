@@ -41,7 +41,7 @@ export const weddingConfig = {
   },
 
   rsvp: {
-    googleScriptUrl: "YOUR_GOOGLE_SCRIPT_URL", // ← Thay bằng URL Google Apps Script
+    googleScriptUrl: "https://script.google.com/macros/s/AKfycbyTrleOk02OVIeckzLz2ifPxF3XCOwBa-Nyo80NKogS53qDtjpwUjryxSwTKjcfLlcGqA/exec", // ← Thay bằng URL Google Apps Script
   },
 
   gift: {
