@@ -117,21 +117,21 @@ export default function RSVPSection() {
                 <div className="text-3xl mb-4">
                   {submittedAttending ? "🎉" : "💌"}
                 </div>
-                <p className="font-serif text-lg text-[#2C2C2C]/80">
+                <p className="font-serif text-xl text-[#2C2C2C]/90">
                   {submittedAttending
                     ? "Cảm ơn bạn đã xác nhận!"
                     : "Cảm ơn bạn đã phản hồi."}
                 </p>
-                <p className="font-sans text-sm text-[#2C2C2C]/50 mt-2">
+                <p className="font-serif text-base text-[#2C2C2C]/60 italic mt-2">
                   {submittedAttending
                     ? "Chúng mình rất mong được gặp bạn."
                     : "Chúng mình rất tiếc!"}
                 </p>
-                <div className="mt-6 pt-4 border-t border-[#C9B88C]/15">
+                <div className="mt-6 pt-4 border-t border-[#C9B88C]/20">
                   <button
                     type="button"
                     onClick={handleReset}
-                    className="font-sans text-xs tracking-wider text-[#1B3A5C]/70 hover:text-[#1B3A5C] underline underline-offset-4 decoration-[#C9B88C]/60 hover:decoration-[#1B3A5C] transition-all cursor-pointer inline-flex items-center gap-1.5 focus:outline-none"
+                    className="font-serif text-sm tracking-wider text-[#1B3A5C]/80 hover:text-[#1B3A5C] underline underline-offset-4 decoration-[#A68A56]/60 hover:decoration-[#1B3A5C] transition-all cursor-pointer inline-flex items-center gap-1.5 focus:outline-none"
                   >
                     <span>Gửi thêm phản hồi khác</span>
                   </button>
@@ -152,7 +152,7 @@ export default function RSVPSection() {
                 <div>
                   <label
                     htmlFor="rsvp-name"
-                    className="block font-sans text-xs tracking-[0.15em] text-[#2C2C2C]/60 uppercase mb-2"
+                    className="block font-serif text-sm sm:text-base tracking-[0.1em] text-[#2C2C2C]/75 uppercase mb-2"
                   >
                     Họ và tên
                   </label>
@@ -164,18 +164,18 @@ export default function RSVPSection() {
                     onChange={(e) =>
                       setForm((f) => ({ ...f, name: e.target.value }))
                     }
-                    className="w-full px-4 py-3 border border-[#C9B88C]/60 bg-white/80 text-[#2C2C2C] font-sans text-sm focus:outline-none focus:border-[#1B3A5C] focus:ring-1 focus:ring-[#1B3A5C]/20 transition-colors"
+                    className="w-full px-4 py-3 border border-[#C9B88C]/60 bg-white/80 text-[#2C2C2C] font-serif text-base focus:outline-none focus:border-[#1B3A5C] focus:ring-1 focus:ring-[#1B3A5C]/20 transition-colors placeholder:font-serif placeholder:text-[#2C2C2C]/40"
                     placeholder="Nhập họ và tên"
                   />
                 </div>
 
                 {/* Attending */}
                 <div>
-                  <p className="font-sans text-xs tracking-[0.15em] text-[#2C2C2C]/60 uppercase mb-3">
+                  <p className="font-serif text-sm sm:text-base tracking-[0.1em] text-[#2C2C2C]/75 uppercase mb-3">
                     Bạn sẽ tham dự chứ?
                   </p>
-                  <div className="space-y-2">
-                    <label className="flex items-center gap-3 px-4 py-3 border border-[#C9B88C]/40 bg-white/50 cursor-pointer transition-colors hover:border-[#1B3A5C]/30 has-[:checked]:border-[#1B3A5C]/50 has-[:checked]:bg-[#1B3A5C]/5">
+                  <div className="space-y-2.5">
+                    <label className="flex items-center gap-3 px-4 py-3.5 border border-[#C9B88C]/40 bg-white/50 cursor-pointer transition-colors hover:border-[#1B3A5C]/30 has-[:checked]:border-[#1B3A5C]/50 has-[:checked]:bg-[#1B3A5C]/5 rounded-sm">
                       <input
                         type="radio"
                         name="attending"
@@ -186,11 +186,11 @@ export default function RSVPSection() {
                         }
                         className="w-4 h-4 accent-[#1B3A5C]"
                       />
-                      <span className="font-sans text-sm text-[#2C2C2C]/80">
+                      <span className="font-serif text-base text-[#2C2C2C]/90">
                         Có, tôi sẽ tham dự
                       </span>
                     </label>
-                    <label className="flex items-center gap-3 px-4 py-3 border border-[#C9B88C]/40 bg-white/50 cursor-pointer transition-colors hover:border-[#1B3A5C]/30 has-[:checked]:border-[#1B3A5C]/50 has-[:checked]:bg-[#1B3A5C]/5">
+                    <label className="flex items-center gap-3 px-4 py-3.5 border border-[#C9B88C]/40 bg-white/50 cursor-pointer transition-colors hover:border-[#1B3A5C]/30 has-[:checked]:border-[#1B3A5C]/50 has-[:checked]:bg-[#1B3A5C]/5 rounded-sm">
                       <input
                         type="radio"
                         name="attending"
@@ -201,7 +201,7 @@ export default function RSVPSection() {
                         }
                         className="w-4 h-4 accent-[#1B3A5C]"
                       />
-                      <span className="font-sans text-sm text-[#2C2C2C]/80">
+                      <span className="font-serif text-base text-[#2C2C2C]/90">
                         Tôi rất tiếc, không thể tham dự
                       </span>
                     </label>
@@ -213,7 +213,7 @@ export default function RSVPSection() {
                   <div className="transition-all duration-300">
                     <label
                       htmlFor="rsvp-guests"
-                      className="block font-sans text-xs tracking-[0.15em] text-[#2C2C2C]/60 uppercase mb-2"
+                      className="block font-serif text-sm sm:text-base tracking-[0.1em] text-[#2C2C2C]/75 uppercase mb-2"
                     >
                       Số lượng người tham dự
                     </label>
@@ -230,14 +230,14 @@ export default function RSVPSection() {
                           guests: val === "" ? "" : Number(val),
                         }));
                       }}
-                      className="w-full px-4 py-3 border border-[#C9B88C]/60 bg-white/80 text-[#2C2C2C] font-sans text-sm focus:outline-none focus:border-[#1B3A5C] focus:ring-1 focus:ring-[#1B3A5C]/20 transition-colors"
+                      className="w-full px-4 py-3 border border-[#C9B88C]/60 bg-white/80 text-[#2C2C2C] font-serif text-base focus:outline-none focus:border-[#1B3A5C] focus:ring-1 focus:ring-[#1B3A5C]/20 transition-colors"
                     />
                   </div>
                 )}
 
                 {/* Error message */}
                 {error && (
-                  <p className="font-sans text-sm text-[#D4A5A5] text-center">
+                  <p className="font-serif text-sm text-[#D4A5A5] text-center italic">
                     Có lỗi xảy ra, vui lòng thử lại.
                   </p>
                 )}
@@ -246,7 +246,7 @@ export default function RSVPSection() {
                 <button
                   type="submit"
                   disabled={!isValid || isSubmitting}
-                  className="w-full py-3.5 bg-[#1B3A5C] text-white font-sans text-sm tracking-[0.2em] transition-all duration-300 hover:bg-[#1B3A5C]/90 disabled:opacity-40 disabled:cursor-not-allowed active:scale-[0.98] focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-[#1B3A5C]"
+                  className="w-full py-3.5 bg-[#1B3A5C] text-white font-serif text-base sm:text-lg tracking-[0.2em] uppercase transition-all duration-300 hover:bg-[#1B3A5C]/90 disabled:opacity-40 disabled:cursor-not-allowed active:scale-[0.98] focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-[#1B3A5C] shadow-sm rounded-sm"
                 >
                   {isSubmitting ? "ĐANG GỬI..." : "GỬI XÁC NHẬN"}
                 </button>
