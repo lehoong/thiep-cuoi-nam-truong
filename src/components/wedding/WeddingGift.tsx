@@ -55,17 +55,17 @@ export default function WeddingGift() {
         >
           <button
             onClick={() => setIsOpen(true)}
-            className="group relative inline-flex flex-col items-center justify-center gap-2 w-28 h-28 mx-auto rounded-full bg-white border border-[#C9B88C]/60 shadow-xl hover:shadow-2xl hover:scale-[1.05] active:scale-[0.95] transition-all duration-500 focus-visible:outline-2 focus-visible:outline-offset-4 focus-visible:outline-[#1B3A5C]"
+            className="group relative inline-flex flex-row items-center justify-center gap-3 px-8 py-4 mx-auto rounded-full bg-white border border-[#C9B88C]/60 shadow-xl hover:shadow-2xl hover:scale-[1.05] active:scale-[0.95] transition-all duration-500 focus-visible:outline-2 focus-visible:outline-offset-4 focus-visible:outline-[#1B3A5C]"
             aria-label="Mở thông tin gửi quà mừng"
           >
             <div className="absolute inset-0 rounded-full border border-[#C9B88C]/40 animate-ping opacity-75" />
             <Heart
-              size={28}
+              size={24}
               className="text-[#D4A5A5] group-hover:text-[#C9B88C] transition-colors duration-300"
               strokeWidth={1.5}
             />
-            <span className="font-sans text-[10px] tracking-[0.25em] text-[#1B3A5C]/80 group-hover:text-[#1B3A5C] transition-colors uppercase">
-              Mừng Cưới
+            <span className="font-sans text-xs sm:text-sm tracking-[0.2em] text-[#1B3A5C]/80 group-hover:text-[#1B3A5C] transition-colors uppercase font-medium">
+              Gửi Quà Cưới
             </span>
           </button>
         </div>
@@ -112,7 +112,7 @@ export default function WeddingGift() {
               <div className="px-6 pb-8 pt-4">
                 {/* Title */}
                 <h3 className="font-serif text-3xl sm:text-4xl text-center text-[#2C2C2C] mb-4">
-                  Gửi Lời Chúc Phúc
+                  Hộp Quà Cưới
                 </h3>
 
                 {/* Thank You Note */}

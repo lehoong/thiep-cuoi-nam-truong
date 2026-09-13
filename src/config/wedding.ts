@@ -6,11 +6,11 @@
 export const weddingConfig = {
   couple: {
     groom: {
-      name: "Tần Nam Trường",
+      name: "Trần Nam Trường",
       // parents: "", // Bổ sung sau
     },
     bride: {
-      name: "Tần Thu Thủy",
+      name: "Trần Thu Thủy",
       // parents: "", // Bổ sung sau
     },
   },
@@ -46,7 +46,7 @@ export const weddingConfig = {
 
   gift: {
     bankName: "Ngân hàng Ngoại thương Việt Nam (Vietcombank)",
-    accountName: "TẦN NAM TRƯỜNG",
+    accountName: "TRẦN NAM TRƯỜNG",
     accountNumber: "0123456789",
     qrImage: "/photos/qr-placeholder.png",
   },
