@@ -164,7 +164,7 @@ export default function RSVPSection() {
                     onChange={(e) =>
                       setForm((f) => ({ ...f, name: e.target.value }))
                     }
-                    className="w-full px-4 py-3 border border-[#C9B88C]/30 bg-white/80 text-[#2C2C2C] font-sans text-sm focus:outline-none focus:border-[#1B3A5C] focus:ring-1 focus:ring-[#1B3A5C]/20 transition-colors"
+                    className="w-full px-4 py-3 border border-[#C9B88C]/60 bg-white/80 text-[#2C2C2C] font-sans text-sm focus:outline-none focus:border-[#1B3A5C] focus:ring-1 focus:ring-[#1B3A5C]/20 transition-colors"
                     placeholder="Nhập họ và tên"
                   />
                 </div>
@@ -175,7 +175,7 @@ export default function RSVPSection() {
                     Bạn sẽ tham dự chứ?
                   </p>
                   <div className="space-y-2">
-                    <label className="flex items-center gap-3 px-4 py-3 border border-[#C9B88C]/20 bg-white/50 cursor-pointer transition-colors hover:border-[#1B3A5C]/30 has-[:checked]:border-[#1B3A5C]/50 has-[:checked]:bg-[#1B3A5C]/5">
+                    <label className="flex items-center gap-3 px-4 py-3 border border-[#C9B88C]/40 bg-white/50 cursor-pointer transition-colors hover:border-[#1B3A5C]/30 has-[:checked]:border-[#1B3A5C]/50 has-[:checked]:bg-[#1B3A5C]/5">
                       <input
                         type="radio"
                         name="attending"
@@ -190,7 +190,7 @@ export default function RSVPSection() {
                         Có, tôi sẽ tham dự
                       </span>
                     </label>
-                    <label className="flex items-center gap-3 px-4 py-3 border border-[#C9B88C]/20 bg-white/50 cursor-pointer transition-colors hover:border-[#1B3A5C]/30 has-[:checked]:border-[#1B3A5C]/50 has-[:checked]:bg-[#1B3A5C]/5">
+                    <label className="flex items-center gap-3 px-4 py-3 border border-[#C9B88C]/40 bg-white/50 cursor-pointer transition-colors hover:border-[#1B3A5C]/30 has-[:checked]:border-[#1B3A5C]/50 has-[:checked]:bg-[#1B3A5C]/5">
                       <input
                         type="radio"
                         name="attending"
@@ -230,7 +230,7 @@ export default function RSVPSection() {
                           guests: val === "" ? "" : Number(val),
                         }));
                       }}
-                      className="w-full px-4 py-3 border border-[#C9B88C]/30 bg-white/80 text-[#2C2C2C] font-sans text-sm focus:outline-none focus:border-[#1B3A5C] focus:ring-1 focus:ring-[#1B3A5C]/20 transition-colors"
+                      className="w-full px-4 py-3 border border-[#C9B88C]/60 bg-white/80 text-[#2C2C2C] font-sans text-sm focus:outline-none focus:border-[#1B3A5C] focus:ring-1 focus:ring-[#1B3A5C]/20 transition-colors"
                     />
                   </div>
                 )}

@@ -43,14 +43,15 @@ export default function Index() {
               className="w-full h-full object-cover object-top"
               fetchPriority="high"
             />
-            <div className="absolute inset-0 bg-gradient-to-b from-black/10 via-transparent to-[#FFFEF9]" />
+            <div className="absolute inset-0 bg-black/20" />
+            <div className="absolute inset-0 bg-gradient-to-t from-black/70 via-black/20 to-transparent" />
 
             {/* Subtle name overlay */}
             <div className="absolute bottom-12 left-0 right-0 text-center px-6">
-              <h1 className="font-serif text-3xl sm:text-4xl text-[#2C2C2C] drop-shadow-md flex flex-col sm:flex-row items-center justify-center gap-1 sm:gap-3">
-                <span className="whitespace-nowrap">{weddingConfig.couple.groom.name}</span>
-                <span className="text-[#C9B88C] text-2xl sm:text-3xl font-normal leading-none">&</span>
-                <span className="whitespace-nowrap">{weddingConfig.couple.bride.name}</span>
+              <h1 className="font-serif text-3xl sm:text-4xl text-white drop-shadow-lg flex flex-col sm:flex-row items-center justify-center gap-1 sm:gap-3">
+                <span className="whitespace-nowrap drop-shadow-md">{weddingConfig.couple.groom.name}</span>
+                <span className="text-[#C9B88C] text-2xl sm:text-3xl font-normal leading-none drop-shadow-lg">&amp;</span>
+                <span className="whitespace-nowrap drop-shadow-md">{weddingConfig.couple.bride.name}</span>
               </h1>
             </div>
           </section>

@@ -61,7 +61,7 @@ export default function WeddingGift() {
             <div className="absolute inset-0 rounded-full border border-[#C9B88C]/40 animate-ping opacity-75" />
             <Heart
               size={24}
-              className="text-[#D4A5A5] group-hover:text-[#C9B88C] transition-colors duration-300"
+              className="text-[#D4A5A5] group-hover:text-[#A68A56] transition-colors duration-300"
               strokeWidth={1.5}
             />
             <span className="font-sans text-xs sm:text-sm tracking-[0.2em] text-[#1B3A5C]/80 group-hover:text-[#1B3A5C] transition-colors uppercase font-medium">

@@ -7,11 +7,11 @@ export const weddingConfig = {
   couple: {
     groom: {
       name: "Trần Nam Trường",
-      // parents: "", // Bổ sung sau
+      parents: "Ông Trần Văn Thi - Bà Nguyễn Thị Là",
     },
     bride: {
       name: "Trần Thu Thủy",
-      // parents: "", // Bổ sung sau
+      parents: "Ông Trần Văn Trung - Bà Nguyễn Thị Hà",
     },
   },
 
@@ -21,6 +21,7 @@ export const weddingConfig = {
     day: "20",
     month: "09",
     year: "2026",
+    lunar: "(Nhằm ngày 10 tháng 08 năm Bính Ngọ)",
   },
 
   events: {
