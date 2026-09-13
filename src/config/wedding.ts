@@ -45,9 +45,9 @@ export const weddingConfig = {
   },
 
   gift: {
-    bankName: "Ngân hàng Ngoại thương Việt Nam (Vietcombank)",
+    bankName: "Techcombank",
     accountName: "TRẦN NAM TRƯỜNG",
-    accountNumber: "0123456789",
+    accountNumber: "1111200004",
     qrImage: "/photos/qr-placeholder.png",
   },
 
